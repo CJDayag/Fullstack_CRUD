@@ -22,6 +22,7 @@ A modern web application built with Laravel (backend) and React with Axios (fron
   - PHP
 - Frontend:
   - React
+  - Axios
   - Tailwind CSS
   - shadcn/ui components
   - Lucide icons
@@ -105,3 +106,30 @@ A modern web application built with Laravel (backend) and React with Axios (fron
    ```bash
    npm run dev
    ```
+## API Endpoints
+
+- `GET /api/tasks` - Get all records (with pagination, sorting, and search)
+  - Query parameters:
+    - `page`: Page number
+    - `search`: Search term
+    - `sort_by`: Field to sort by
+    - `sort_order`: Sort direction (asc/desc)
+- `POST /api/taskscreate` - Create a new record
+- `GET /api/tasksshow/{task}` - Get a specific record
+- `PUT /api/tasksupdate/{task}` - Update a record
+- `DELETE /api/tasksdelete/{task}` - Delete a record
+
+## Browser Support
+
+Tested and working on:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Mobile Support
+
+The application is fully responsive and tested on:
+- iOS devices (iPhone, iPad)
+- Android devices
+- Various screen sizes and orientations

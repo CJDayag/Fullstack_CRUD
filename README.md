@@ -86,4 +86,22 @@ A modern web application built with Laravel (backend) and React with Axios (fron
   ```text
   backend_api.test
   ```
-   
+  ## Frontend Setup
+  
+1. Navigate to your frontend directory
+   ```bash
+   cd frontend
+   ```
+2. Install Node.js dependencies
+   ```bash
+   npm install
+   ```
+3. In your **backend_api** directory, find the **cors.php** file under the **config** diretory
+4. Change the allowed origins into your frontend's port number:
+   ```text
+   'allowed_origins' => ['YOUR_FRONTEND_PORT'],
+   ```
+5. Start the Development process
+   ```bash
+   npm run dev
+   ```

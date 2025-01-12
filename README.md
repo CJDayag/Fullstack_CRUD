@@ -51,7 +51,7 @@ A modern web application built with Laravel (backend) and React with Axios (fron
      DB_PASSWORD=yOUR_PASSWORD
    ```
 5. Configure App URL (For XAMPP Users)
-   In the _.env_ file, change the **_APP_URL_** into your localhost port number:
+-  In the _.env_ file, change the **_APP_URL_** into your localhost port number:
    ```text
    APP_URL=http://backend_api.test  //Change to your localhost port number
    ```

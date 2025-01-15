@@ -80,9 +80,9 @@ Make sure you installed the following:
     php artisan serve
     ```
 9. Configure App URL
--  In the _.env_ file, change the **_APP_URL_** into your localhost port number:
+-  In the _.env_ file, change the **_APP_URL_** into your localhost URL (You will see the url when you run the development server):
    ```text
-   APP_URL=http://backend_api.test  //Change to your localhost port number
+   APP_URL=http://backend_api.test  //Change to your localhost URL
    ```
 - Then run again the development server
   ```bash

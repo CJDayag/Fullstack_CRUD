@@ -40,6 +40,7 @@ Make sure you installed the following:
    ```bash
    https://github.com/CJDayag/Fullstack_CRUD.git
    ```
+   OR Download the Zip file
 2. Place the repository inside the xampp's htdocs
 3. Make sure the following is uncommented in your **php configuration settings.** (located in "_xampp/php/php.ini_")
    ```config
@@ -93,6 +94,7 @@ Make sure you installed the following:
   ```bash
   https://github.com/CJDayag/Fullstack_CRUD.git
   ```
+  OR Download the Zip file
 2. Move the project into your **Herd** directory
 3. Open your Herd directory in the control panel
 4. Go to the backend directory

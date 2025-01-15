@@ -76,30 +76,59 @@ Make sure you installed the following:
    ```
 8. Run the Development Server:
    - Then run the development server
-  ```bash
-  php artisan serve
-  ```
+    ```bash
+    php artisan serve
+    ```
 9. Configure App URL
-   
 -  In the _.env_ file, change the **_APP_URL_** into your localhost port number:
    ```text
    APP_URL=http://backend_api.test  //Change to your localhost port number
    ```
-- Then again run the development server
+- Then run again the development server
   ```bash
   php artisan serve
   ```
-### For Laravel Herd Users:
-- Move the project into your **Herd** directory
-- Open your Herd directory in the control panel
-- Go to the backend directory
+## Backend Setup (Laravel Herd):
+
+1. Clone the repository
+   ```bash
+   https://github.com/CJDayag/Fullstack_CRUD.git
+   ```
+2. Move the project into your **Herd** directory
+3. Open your Herd directory in the control panel
+4. Go to the backend directory
   ```bash
   cd backend_api
   ```
-- Link the **_backend_api_** directory:
+5. Link the **_backend_api_** directory:
   ```bash
   herd link
   ```
+6. Install PHP Dependencies
+   ```bash
+   composer install
+   ```
+7. Copy the **.env** file.
+   ```bash
+   copy .env.example .env
+   ```
+8. Generate application key
+   ```bash
+   php artisan key:generate
+   ```
+9. Configure the database setting in _.env_ file:
+   ```text
+   DB_CONNECTION=mysql
+     DB_HOST=YOUR_HOST
+     DB_PORT=YOUR_DB_PORT
+     DB_DATABASE=YOUR_DATABASE
+     DB_USERNAME=YOUR_USERNAME
+     DB_PASSWORD=yOUR_PASSWORD
+   ```
+10. Run the migrations
+   ```bash
+   php artisan migrate
+   ```
 - Test your laravel project in the browser using the url
   ```text
   backend_api.test

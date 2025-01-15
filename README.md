@@ -118,6 +118,7 @@ Make sure you installed the following:
 5. Edit all the API endpoint routes in the **_TaskShow.jsx_**, **_TaskForm.jsx_** {all located inside src/components)
    
    ```TaskShow.jsx line 28
+   ///_TaskShow.jsx line 28_
    const response = await axios.get(`http://127.0.0.1:8000/api/tasksshow/${id}`); ///Change based on your APP_URL
    ```
 
@@ -126,13 +127,16 @@ Make sure you installed the following:
    ```
 
    ```TaskForm.jsx line 36
+   ///_TaskForm.jsx line 36_
    const response = await axios.get(`http://127.0.0.1:8000/api/tasksshow/${id}`); //Change based on your APP_URL
    ```
    
    ```TaskForm.jsx line 62
+   ///_TaskForm.jsx line 62_
    await axios.put(`http://127.0.0.1:8000/api/tasksupdate/${id}`, formData); ///Change based on your APP_URL
    ```
   ```TaskForm.jsx line 65
+  ///_TaskForm.jsx line 65_
   await axios.post('http://127.0.0.1:8000/api/taskscreate', formData); ///Change based on your APP_URL
   ```
    

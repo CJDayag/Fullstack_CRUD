@@ -29,30 +29,35 @@ A modern web application built with Laravel (backend) and React with Axios (fron
 
 # Installation
 
-## Backend Setup:
 **IMPORTANT**
 Make sure you installed the following:
 - Composer (Latest Version)
 - PHP (Latest Version)
 - Laravel Herd **OR** XAMPP control panel
 
+## Backend Setup (XAMPP Control Panel):
 1. Clone the repository
    ```bash
    https://github.com/CJDayag/Fullstack_CRUD.git
    ```
-2. Go to the backend directory
+2. Place the repository inside the xampp's htdocs
+3. Make sure the following is uncommented in your **php configuration settings.** (located in "_xampp/php/php.ini_")
+   ```config
+   ;extension=zip //Remove the ; to uncomment
+   ```
+4. Navigate to the backend directory
    ```bash
    cd backend_api
    ```
-3. Install PHP Dependencies
+5. Install PHP Dependencies
    ```bash
    composer install
    ```
-4. Copy the **.env** file.
+6. Copy the **.env** file.
    ```bash
    copy .env.example .env
    ```
-5. Generate application key
+7. Generate application key
    ```bash
    php artisan key:generate
    ```

@@ -108,22 +108,22 @@ Make sure you installed the following:
    composer install
    ```
 7. Copy the **.env** file.
-   ```bash
-   copy .env.example .env
-   ```
+```bash
+copy .env.example .env
+```
 8. Generate application key
-   ```bash
-   php artisan key:generate
-   ```
+```bash
+php artisan key:generate
+```
 9. Configure the database setting in _.env_ file:
-   ```text
+```text
    DB_CONNECTION=mysql
      DB_HOST=YOUR_HOST
      DB_PORT=YOUR_DB_PORT
      DB_DATABASE=YOUR_DATABASE
      DB_USERNAME=YOUR_USERNAME
      DB_PASSWORD=yOUR_PASSWORD
-   ```
+```
 10. Run the migrations
    ```bash
    php artisan migrate

@@ -75,10 +75,9 @@ Make sure you installed the following:
    php artisan migrate
    ```
 8. Run the Development Server:
-   - Then run the development server
-    ```bash
-    php artisan serve
-    ```
+   ```bash
+   php artisan serve
+   ```
 9. Configure App URL
 -  In the _.env_ file, change the **_APP_URL_** into your localhost URL (You will see the url when you run the development server):
    ```text
@@ -91,9 +90,9 @@ Make sure you installed the following:
 ## Backend Setup (Laravel Herd):
 
 1. Clone the repository
-   ```bash
-   https://github.com/CJDayag/Fullstack_CRUD.git
-   ```
+  ```bash
+  https://github.com/CJDayag/Fullstack_CRUD.git
+  ```
 2. Move the project into your **Herd** directory
 3. Open your Herd directory in the control panel
 4. Go to the backend directory
@@ -105,7 +104,7 @@ Make sure you installed the following:
   herd link
   ```
 6. Install PHP Dependencies
-   ```bash
+  ```bash
    composer install
    ```
 7. Copy the **.env** file.
@@ -130,9 +129,9 @@ Make sure you installed the following:
    php artisan migrate
    ```
 - Test your laravel project in the browser using the url
-  ```text
-  backend_api.test
-  ```
+   ```text
+   backend_api.test
+   ```
   ## Frontend Setup
   **IMPORTANT**
   Make sure you installed the following:

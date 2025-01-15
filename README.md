@@ -115,7 +115,28 @@ Make sure you installed the following:
    ```text
    'allowed_origins' => ['YOUR_FRONTEND_PORT'],
    ```
-5. Start the Development process
+5. Edit all the API endpoint routes in the **_TaskShow.jsx_**, **_TaskForm.jsx_** {all located inside src/components)
+   
+   ```TaskShow.jsx line 28
+   const response = await axios.get(`http://127.0.0.1:8000/api/tasksshow/${id}`); ///Change based on your APP_URL
+   ```
+
+   ```TaskShow.jsx line 44
+   await axios.delete(`http://127.0.0.1:8000/api/tasksdelete/${id}`); ///Change based on your APP_URL
+   ```
+
+   ```TaskForm.jsx line 36
+   const response = await axios.get(`http://127.0.0.1:8000/api/tasksshow/${id}`); //Change based on your APP_URL
+   ```
+   
+   ```TaskForm.jsx line 62
+   await axios.put(`http://127.0.0.1:8000/api/tasksupdate/${id}`, formData); ///Change based on your APP_URL
+   ```
+  ```TaskForm.jsx line 65
+  await axios.post('http://127.0.0.1:8000/api/taskscreate', formData); ///Change based on your APP_URL
+  ```
+   
+6. Start the Development process
    ```bash
    npm run dev
    ```

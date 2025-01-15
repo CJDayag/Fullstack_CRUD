@@ -30,6 +30,12 @@ A modern web application built with Laravel (backend) and React with Axios (fron
 # Installation
 
 ## Backend Setup:
+**IMPORTANT**
+Make sure you installed the following:
+- Composer (Latest Version)
+- PHP (Latest Version)
+- Laravel Herd **OR** XAMPP control panel
+
 1. Clone the repository
    ```bash
    https://github.com/CJDayag/Fullstack_CRUD.git
@@ -42,12 +48,15 @@ A modern web application built with Laravel (backend) and React with Axios (fron
    ```bash
    composer install
    ```
-4. Generate application key
+4. Copy the **.env** file.
+   ```bash
+   copy .env.example .env
+   ```
+5. Generate application key
    ```bash
    php artisan key:generate
    ```
-   
-5. Configure the database settings:
+6. Configure the database settings:
    ```text
    DB_CONNECTION=mysql
      DB_HOST=YOUR_HOST
@@ -56,12 +65,12 @@ A modern web application built with Laravel (backend) and React with Axios (fron
      DB_USERNAME=YOUR_USERNAME
      DB_PASSWORD=yOUR_PASSWORD
    ```
-6. Run the migrations
+7. Run the migrations
    ```bash
    php artisan migrate
    ```
    
-7. Configure App URL
+8. Configure App URL
    
 ### For XAMPP Users:
 -  In the _.env_ file, change the **_APP_URL_** into your localhost port number:
@@ -88,6 +97,10 @@ A modern web application built with Laravel (backend) and React with Axios (fron
   backend_api.test
   ```
   ## Frontend Setup
+  **IMPORTANT**
+  Make sure you installed the following:
+  - Node.js (Latest Version)
+  - NPM (Latest Version)
   
 1. Navigate to your frontend directory
    ```bash

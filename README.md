@@ -61,11 +61,11 @@ Make sure you installed the following:
    ```bash
    php artisan key:generate
    ```
-6. Configure the database settings:
+6. Configure the database setting in _.env_ file:
    ```text
    DB_CONNECTION=mysql
      DB_HOST=YOUR_HOST
-     DB_PORT=YOUR_PORT
+     DB_PORT=YOUR_DB_PORT
      DB_DATABASE=YOUR_DATABASE
      DB_USERNAME=YOUR_USERNAME
      DB_PASSWORD=yOUR_PASSWORD
@@ -74,15 +74,18 @@ Make sure you installed the following:
    ```bash
    php artisan migrate
    ```
+8. Run the Development Server:
+   - Then run the development server
+  ```bash
+  php artisan serve
+  ```
+9. Configure App URL
    
-8. Configure App URL
-   
-### For XAMPP Users:
 -  In the _.env_ file, change the **_APP_URL_** into your localhost port number:
    ```text
    APP_URL=http://backend_api.test  //Change to your localhost port number
    ```
-- Then run the development server
+- Then again run the development server
   ```bash
   php artisan serve
   ```
